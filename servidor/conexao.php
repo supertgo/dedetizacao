@@ -4,4 +4,4 @@ define('USUARIO', 'root');
 define('SENHA', 'supertgo2021');
 define('DB', 'dedetizacao');
 
-$conection = mysqli_connect(HOST, USUARIO, SENHA, DB) or die ('Me desculpe, não foi possível conectar ao banco.');
+$conexao = mysqli_connect(HOST, USUARIO, SENHA, DB) or die ('Me desculpe, não foi possível conectar ao banco.');
