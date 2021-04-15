@@ -10,7 +10,7 @@ include('./conexao.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/bulma.min.css">
+    <link rel="stylesheet" href="../estilos/bulma.min.css">
     <title>Zona do administrador</title>
 </head>
 <body>
@@ -39,7 +39,7 @@ include('./conexao.php');
                     unset($_SESSION['nao_autenticado_admin']);
                     ?>
                     <div class="box">
-                        <form action="./loginAdmin.php" method="POST">
+                        <form action="./login.php" method="POST">
                             <div class="field">
                                 <div class="control">
                                     <h1>Senha</h1>
