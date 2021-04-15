@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +13,7 @@
     
     <nav> 
         <ul>
-        <a href="index.html"><li>Home</li></a>
+        <a href="../index.html"><li>Home</li></a>
         <a href="./servidor/admin.php"><li>adm</li></a>
         </ul>
     </nav>
