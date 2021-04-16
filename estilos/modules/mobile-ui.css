@@ -1,0 +1,40 @@
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ffffff;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin:  50px 0;
+        padding-left: 0px;
+        line-height: 30px;
+    }
+
+    nav ul li:last-child {
+        float: none;
+    }
+
+    a:hover, a.active{
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    .social-media {
+        display: none;
+    }
+}
