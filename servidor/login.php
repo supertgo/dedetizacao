@@ -1,20 +1,25 @@
 <?php
 session_start();
-include('./conexao.php');  
+include('conexao.php');  
 
-$senha = mysqli_real_escape_string(trim($conexao, $_POST['senha']));
-$query = "SELECT * FROM dedetizatable WHERE senha = '$senha';'";
+if(empty($_POST['senha'])){
+    header('Location: admin.php');
+    exit();
+}
 
-$resposta = mysqli_connect($conexao, $query);
+$senha = mysqli_real_escape_string($conexao, trim($_POST['senha']));
+$query = "SELECT * FROM dedetizatable WHERE senha = '{$senha}'";
+
+$resposta = mysqli_query($conexao, $query);
 $linhas = mysqli_num_rows($resposta);
 
-if($linhas < 1){
-    $_SESSION['nao_autenticado_admin'] = true;
-    header("Location: admin.php");
-    exit();
-} else {
+if($linhas == 1){
     $_SESSION['admin'] = $senha;
     header("Location: painel.php");
+    exit();
+} else {
+    $_SESSION['nao_autenticado_admin'] = true;
+    header("Location: admin.php");
     exit();
 }
 
