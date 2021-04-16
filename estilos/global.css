@@ -1,0 +1,10 @@
+@import url(navbar.css);
+@import url(social-media.css);
+@import url(footer.css);
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #3d6b8c; /*So mudei para ficar mais confortavel */
+    overflow-x: hidden;
+}

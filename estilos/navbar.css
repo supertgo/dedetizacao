@@ -1,9 +1,3 @@
-body {
-    width: 100%;
-    height: 100vh;
-    background-color: #3d6b8c; /*So mudei para ficar mais confortavel */
-    overflow-x: hidden;
-}
 
 *{
     margin: 0;
@@ -28,7 +22,6 @@ nav ul li a {
     padding: 7px 13px;
 }
 .active {
-
     background: #ffffff96;
     border: 2px solid white;
     transition: .5s;
