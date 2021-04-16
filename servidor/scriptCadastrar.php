@@ -1,29 +1,36 @@
 <?php
-
+session_start();
 include('conexao.php');
 
-$nome = mysqli_real_escape_string($conexao, $_POST['nome']);
-$cpf = mysqli_real_escape_string($conexao, $_POST['cpf']);
-$telefone = mysqli_real_escape_string($conexao, $_POST['telefone']);
-$email = mysqli_real_escape_string($conexao, $_POST['email']);
-$valor = mysqli_real_escape_string($conexao, $_POST['valor']);
-$detalhes = mysqli_real_escape_string($conexao, $_POST['detalhes']);
+$nome = mysqli_real_escape_string($conexao, trim($_POST['nome']));
+$cpf = mysqli_real_escape_string($conexao, trim($_POST['cpf']));
+$telefone = mysqli_real_escape_string($conexao, trim($_POST['telefone']));
+$email = mysqli_real_escape_string($conexao, trim($_POST['email']));
+$valor = mysqli_real_escape_string($conexao, trim($_POST['valor']));
+$detalhes = mysqli_real_escape_string($conexao, trim($_POST['detalhes']));
+$senhaCriptografada = md5(time());
 
-$query = "SELECT * FROM dedetizatable WHERE cpf = '$cpf'";
+$query = "select count(*) as total from dedetizatable where cpf = '$cpf'";
+
 $resposta = mysqli_query($conexao, $query);
-$linhas = mysqli_num_rows($resposta);
+$linhas = mysqli_fetch_assoc($resposta);
 
-if($linhas == 1){
+if($linhas['total'] == 1){
     $_SESSION['usuario_existe'] = true;
     header("Location: formularioCadastrar.php");
-    exit();
+    exit;
 }
 
-$query_cadastra = "INSERT INTO dedetizatable (nome, cpf, telefone, email, valor, detalhes) 
-VALUES ('$nome', '$cpf', '$telefone', '$email', '$valor', '$detalhes');";
+$query_cadastra = "INSERT INTO dedetizatable (nome, cpf, telefone, email, valor, detalhes, senha) 
+VALUES ('$nome', '$cpf', '$telefone', '$email', '$valor', '$detalhes', '$senhaCriptografada')";
 
 if($conexao->query($query_cadastra) === TRUE) {
 	$_SESSION['status_cadastro'] = true;
 }
 
 $conexao->close();
+
+header('Location: formularioCadastrar.php');
+exit;
+?>
+
