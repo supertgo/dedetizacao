@@ -46,7 +46,7 @@ session_start();
             ?>
 
             <div class="box" style="max-width: 350px; display: block; margin: auto">
-                <form action="scriptCadastrar.php" method="POST" enctype="multipart/form-data">
+                <form action="scriptCadastrar.php" method="POST">
                     <label>Nome do cliente</label>
                     <div class="field">
                         <div class="control"> <!-- nome do cliente -->
@@ -61,26 +61,26 @@ session_start();
                     </div>
                     <label>Telefone</label>
                     <div class="field">
-                        <div class="control"> <!-- Endereço -->
-                            <input name="telefone" class="input is-large" required>
+                        <div class="control"> <!-- Telefone -->
+                            <input name="telefone" type="text" class="input is-large" required>
                         </div>
                     </div>
                     <label>Email</label> <!-- Email -->
                     <div class="field"> 
                         <div class="control">
-                            <input name="email" class="input is-large" type="text">
+                            <input name="email" type="text" class="input is-large" type="text">
                       </div>
                   </div>
                   <label>Valor do orçamento</label>
                   <div class="field"> 
                     <div class="control"> <!-- valor -->
-                        <input name="valor" class="input is-large" required>
+                        <input name="valor" type="text" class="input is-large" required>
                     </div>
                 </div>
                 <label>Detalhes do orçamento</label>
                 <div class="field">
                     <div class="control"> <!-- detalhes do orçamento -->
-                        <textarea name="detalhes" class="input is-large" style="width: 350px; height: 150px;">
+                        <textarea name="detalhes" type="text" class="input is-large" style="width: 350px; height: 150px;">
                         </textarea>
                     </div>
                 </div>
