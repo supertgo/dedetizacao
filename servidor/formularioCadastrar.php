@@ -84,8 +84,8 @@ session_start();
                         </textarea>
                     </div>
                 </div>
-                </div>
                 <button type="submit" class="button is-block is-link is-large is-fullwidth">Cadastrar</button>
+                </div>
             </form>
         </div>
     </div>

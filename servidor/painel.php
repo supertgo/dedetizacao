@@ -57,7 +57,7 @@
                         <td><?php echo $dado['detalhes'];?></td>
 						<td style="max-width: 160px">
 							<a class="editar" href="editar.php?id=<?php echo $dado['id'];?>"><i class="fas fa-user-edit"></i></a>
-							<a class="deletar" href="deletar.php?id=<?php echo $dado['id'];?>"><i class="fas fa-user-times"></i>
+							<a class="deletar" href="deletar.php?id=<?php echo $dado['id'];?>"><i class="fas fa-user-times"></i></a>
                         </td>
 						</tr>
 					<?php } ?>

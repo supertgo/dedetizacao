@@ -23,7 +23,7 @@ $resposta = mysqli_query($conexao, $query);
 <body>
 	<?php
 	if(!$resposta){
-		echo "Algo deu errado. Tente novamente." . mysqli_error($conection);
+		echo "Algo deu errado. Tente novamente." . mysqli_error($conexao);
 	} else {
 		?>
 		<div class="container has-text-centered">

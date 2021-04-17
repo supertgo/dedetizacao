@@ -14,13 +14,14 @@ $query = "SELECT * FROM dedetizatable WHERE id = '$identificador'";
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="../estilos/bulma.min.css" />
-	<title>Editar tabela</title>
+	<title>Excluír dado da tabela</title>
 </head>
 <body>
-	<div class="container has-text-centered">
+<div class="container has-text-centered">
 		<br></br>
-	<h3 class="title has-text-grey">Edição de dados</h3>
-	<h2><a href="admin.php">Voltar</a></h2>
+	    <h3 class="title has-text-grey">Remoção de dados</h3>
+        <h3 class="title notification is-danger">Cuidado! Zona para exclusão de dados!</h3>
+        <h2><a href="painel.php">Voltar</a></h2>
 <div class="content">	
 		<table class="table">
 			<thead>
@@ -32,7 +33,7 @@ $query = "SELECT * FROM dedetizatable WHERE id = '$identificador'";
                     <th>Email</th>
                     <th>Valor do orçamento</th>
                     <th>Detalhes</th>
-                    <th>Salvar</th>
+                    <th>Deletar</th>
 				</tr>
 			</thead>
 	<?php
@@ -49,7 +50,7 @@ $query = "SELECT * FROM dedetizatable WHERE id = '$identificador'";
 
 
 		echo ("<br></br>
-			<form action = 'salvar.php' method = 'POST'>
+			<form action = 'salvarDelete.php' method = 'POST'>
 			<tr>
 			<td>
 			<input class='input is-medium' type='text' name='id' value='" . $id . "'>
@@ -73,7 +74,7 @@ $query = "SELECT * FROM dedetizatable WHERE id = '$identificador'";
 			<input class='input is-medium' type='text' name='detalhes' value='" . $detalhes . "'>
 			</td>
 			<td>
-			<input class='button is-link input is-medium' type='submit' value='Salvar Mudanças'>
+			<input class='button is-danger input is-medium' type='submit' value='Excluír'>
 			</td>
 			</tr>
 			</form>
