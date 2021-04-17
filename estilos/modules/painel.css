@@ -1,0 +1,86 @@
+
+.container-titulos-painel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 5%;
+}
+
+.container-titulos-painel h1 {
+    font-size: 2.5rem;
+}
+
+.container-titulos-painel h2 {
+    font-size: 1.2rem;
+}
+
+.container-cadastrar-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: 3% 0 3% 0;
+}
+
+.cadastrar-btn, .filtrar-btn {
+    border: none;
+    background-image: linear-gradient(to bottom right, rgb(65, 161, 240), rgb(68, 157, 240));
+    width: 250px;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    padding: 7px;
+    transition: 0.2s;
+}
+
+.filtrar-btn {
+    width: 50px !important;
+}
+
+.cadastrar-btn:hover, .filtrar-btn:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+.container-cadastrar-btn input {
+    padding: 5px;
+    margin-left: 1%;
+    width: 250px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.container-tabela {
+    width: 90vw;
+    margin: auto;
+    background-color: rgb(232, 232, 243);
+    border-radius: 5px;
+    border: 2px solid red;
+}
+
+.tabela-painel td, .tabela-painel th {
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+.tabela-painel th {
+    width: 200px;
+    background-image: linear-gradient(to bottom right, rgb(255, 0, 0), rgb(231, 52, 52));
+    color: white;
+}
+
+.tabela-painel td {
+    font-size: 1.1rem;
+    border-top: 2px solid rgb(187, 180, 180);
+}
+
+.editar {
+    color: rgb(63, 131, 194);
+}
+
+.deletar {
+    color: rgb(179, 6, 6);
+}

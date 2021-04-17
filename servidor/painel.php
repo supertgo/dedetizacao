@@ -12,21 +12,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/bulma.min.css">
-    <link rel="stylesheet" href="../estilos/painel.css">
+    <link rel="stylesheet" href="../estilos/modules/painel.css">
     <title>Painel de orçamentos</title>
 </head>
 <body>
 
 <div class="container-titulos-painel">
-    <h1>Olá Administrador!<h1>
-    <h1>Orçamentos Dedetização Ltda<h1>
+    <h1>Olá Administrador!</h1>
+    <h2>Orçamentos Tecno Dedetização Ltda</h2>
     <a href="./admin.php">sair</a>    
 </div>
 
-<a href="./formularioCadastrar.php"><button>Cadastrar novo orçamento</button></a>
+<div class="container-cadastrar-btn">
+    <a href="./formularioCadastrar.php"><button class="cadastrar-btn">Cadastrar novo orçamento</button></a>
+    <input type="text" placeholder="filtre pelo CPF..."/>
+    <a href="./formularioCadastrar.php"><button class="filtrar-btn"><i class="fas fa-search"></i></button></a>
+</div>
 
-<div class="container-table">
-    <table>
+<div class="container-tabela">
+    <table class="tabela-painel">
         <tr>
             <th>Id</th>
 	        <th>Nome</th>
@@ -52,12 +56,14 @@
                         <td><?php echo $dado['valor'];?></td>
                         <td><?php echo $dado['detalhes'];?></td>
 						<td style="max-width: 160px">
-							<a href="edit.php?id=<?php echo $dado['id'];?>"><button class="button is-info" style="margin-bottom: 6px; width: 150px;">Alterar dados</button></a>
-							<a href="remove.php?id=<?php echo $dado['id'];?>"><button class="button is-danger" style="width: 150px;">Excluír</button></a></td>
+							<a class="editar" href="edit.php?id=<?php echo $dado['id'];?>"><i class="fas fa-user-edit"></i></a>
+							<a class="deletar" href="remove.php?id=<?php echo $dado['id'];?>"><i class="fas fa-user-times"></i>
+                        </td>
 						</tr>
 					<?php } ?>
 					</tbody>
     </table>
 </div>
+<script src="https://kit.fontawesome.com/5055cfbe4f.js" crossorigin="anonymous"></script>
 </body>
 </html>
