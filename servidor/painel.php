@@ -35,8 +35,8 @@
             <th>Id</th>
 	        <th>Nome</th>
 	        <th>CPF</th>	
+            <th>Telefone</th>
             <th>Email</th>
-	        <th>Telefone</th>
 	        <th>Valor do orçamento</th>
             <th>Detalhes</th>
             <th>Alterar tabela</th>
@@ -56,8 +56,8 @@
                         <td><?php echo $dado['valor'];?></td>
                         <td><?php echo $dado['detalhes'];?></td>
 						<td style="max-width: 160px">
-							<a class="editar" href="edit.php?id=<?php echo $dado['id'];?>"><i class="fas fa-user-edit"></i></a>
-							<a class="deletar" href="remove.php?id=<?php echo $dado['id'];?>"><i class="fas fa-user-times"></i>
+							<a class="editar" href="editar.php?id=<?php echo $dado['id'];?>"><i class="fas fa-user-edit"></i></a>
+							<a class="deletar" href="deletar.php?id=<?php echo $dado['id'];?>"><i class="fas fa-user-times"></i>
                         </td>
 						</tr>
 					<?php } ?>
