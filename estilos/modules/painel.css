@@ -16,9 +16,15 @@
     font-size: 1.2rem;
 }
 
+.form-filtrado {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
 .container-cadastrar-btn {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100vw;

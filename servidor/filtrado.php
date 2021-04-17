@@ -1,7 +1,9 @@
 <?php
  session_start();
  include('conexao.php');
- $query = "SELECT * FROM dedetizatable";
+
+ $cpf = $_POST['cpf'];
+ $query = "SELECT * FROM dedetizatable WHERE cpf = '$cpf'";
  $resposta = mysqli_query($conexao, $query);
 ?>
 
@@ -13,22 +15,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/bulma.min.css">
     <link rel="stylesheet" href="../estilos/modules/painel.css">
-    <title>Painel de orçamentos</title>
+    <title>Dados filtrados</title>
 </head>
 <body>
 
 <div class="container-titulos-painel">
     <h1>Olá Administrador!</h1>
-    <h2>Orçamentos Tecno Dedetização Ltda</h2>
-    <a href="./admin.php">sair</a>    
-</div>
-
-<div class="container-cadastrar-btn">
-    <a href="./formularioCadastrar.php"><button class="cadastrar-btn">Cadastrar novo orçamento</button></a>
-    <form class="form-filtrado" action="filtrado.php" method="POST">
-        <input type="text" name="cpf" placeholder="filtre pelo CPF..."/>
-        <button class="filtrar-btn" type="submit"><i class="fas fa-search"></i></button>
-    </form>
+    <h2>Esses dados foram encontrados:</h2>
+    <a href="./painel.php">Voltar</a>    
 </div>
 
 <div class="container-tabela">
@@ -57,10 +51,6 @@
                         <td><?php echo $dado['email'];?></td>
                         <td><?php echo $dado['valor'];?></td>
                         <td><?php echo $dado['detalhes'];?></td>
-						<td style="max-width: 160px">
-							<a class="editar" href="editar.php?id=<?php echo $dado['id'];?>"><i class="fas fa-user-edit"></i></a>
-							<a class="deletar" href="deletar.php?id=<?php echo $dado['id'];?>"><i class="fas fa-user-times"></i></a>
-                        </td>
 						</tr>
 					<?php } ?>
 					</tbody>
