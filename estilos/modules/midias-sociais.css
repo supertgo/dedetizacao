@@ -1,4 +1,4 @@
-.social-media {
+.midias-sociais {
     margin-left: 10px;
     top: 50%;
     position: fixed;
@@ -20,6 +20,5 @@
 .fa-envelope-square {
     padding-top: 10px;
     color: red;
-    transform: scale(2.2);
-    
+    transform: scale(2.2);   
 }

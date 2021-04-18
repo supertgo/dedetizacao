@@ -17,22 +17,18 @@ nav ul li {
     display: inline-block;
 }
 
-nav ul li:first-child {
-    padding-left: 400px;
-}
-
 nav ul li a {
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     padding: 7px 13px;
 }
-.active {
+.ativo {
     background: #ffffff96;
     transition: 1s;
     border-bottom: 2px solid red;
 }
 
-nav ul li a:hover {
+nav ul li:hover {
     border-bottom: 2px solid red;
 }
 

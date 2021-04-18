@@ -23,12 +23,15 @@
         padding-left: 0px;
         line-height: 30px;
     }
+    nav ul li:first-child {
+        padding-left: 0px;
+    }
 
     nav ul li:last-child {
         float: none;
     }
 
-    a:hover, a.active{
+    a:hover, a.ativo{
         background: none;
         color: #000000;
     }
@@ -37,7 +40,9 @@
         left: -80px;
     }
 
-    .social-media {
+    .midias-sociais {
         display: none;
     }
+
+    
 }
