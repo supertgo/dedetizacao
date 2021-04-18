@@ -5,22 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/global.css">
+    <link rel="stylesheet" href="estilos/modules/formularioContato.css">
     <script src="https://kit.fontawesome.com/4c5d740a15.js" crossorigin="anonymous"></script>
     
     <title>Document</title>
 </head>
 <body>
 
-    <!-- menu temporário só pra eu linkar a parte do server -->
-    
     <nav> 
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
         <ul>
             <li><a class="active" href="index.html"><!--<i class="fa fa-home"></i>-->Inicio</a></li>
             <li><a href=""><!--<i class="fas fa-layer-group"></i>-->Serviços</a></li>
-            <li><a href=""><!--<i class="far fa-id-card"></i>-->Contato</a></li>
-            <li><a href="./servidor/admin.php"><i class="fas fa-user-shield"></i>adm</a></li>
+            <li><a class="fale-conosco"><!--<i class="far fa-id-card"></i>-->Fale conosco</a></li>
+            <li><a href="./servidor/admin.php"><i class="fas fa-user-shield"></i> Administrador</a></li>
         </ul>
     </nav>
 
@@ -29,13 +28,34 @@
         <a href=""><i class="fas fa-envelope-square"></i></a>
     </div>
 
+    <form action="./servidor/mail.php" method="POST" id="formulario-contato"> <!-- Formulário de contato -->
+        <h1>Preencha o formulário e nos envie uma mensagem!</h1>
+        <label>Nome completo</label>
+        <input type="text" name="nome"/>
+        <label>E-mail</label>
+        <input type="text" name="email"/>
+        <label>Telefone</label>
+        <input type="text" name="tel"/>
+        <label>Assunto</label>
+        <select type="text" name="assunto" id="select-assunto">
+            <option key="place-holder">
+                Selecione o assunto
+            </option>
+        </select>
+        <label>Mensagem</label>
+        <textarea type="text" name="msg"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+
     <footer>
         <div></div>
         <div class="direitos">
             <p>Tecno Dedetizador LTDA@Todos os direitos reservados</p>
         </div>
     </footer>
-    <script src="js/global.js"></script>
+    <script src="./js/global.js"></script>
+    <script src="./js/servicosModal.js"></script>
+    <script src="./js/formularioContato.js"></script>
 </body>
 
 </html>

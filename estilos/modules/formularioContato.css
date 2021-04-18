@@ -1,0 +1,6 @@
+#formulario-contato {
+    display: none;
+    flex-direction: column;
+    width: 30rem;
+    background-color: grey;
+}
