@@ -1,0 +1,25 @@
+.midias-sociais {
+    margin-left: 10px;
+    top: 50%;
+    position: fixed;
+    background-color: white;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    padding: 9px;
+    height: 65px;
+}
+
+.fa-whatsapp-square{
+    color: green;
+    transform: scale(2.5);
+    border-bottom: 1px solid black;
+}
+
+.fa-envelope-square {
+    padding-top: 10px;
+    color: red;
+    transform: scale(2.2);
+    
+}
