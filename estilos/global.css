@@ -1,7 +1,7 @@
 @import url(modules/footer.css);
-@import url(modules/social-media.css);
+@import url(modules/midias-sociais.css);
 @import url(modules/navbar.css);
-@import url(modules/mobile-ui.css);
+/*@import url(modules/mobile-ui.css);*/
 body {
     width: 100%;
     height: 100vh;
