@@ -7,10 +7,25 @@
 
     .checkbtn{
         display: block;
+
+        #cancel {
+            display: none;
+        }
+        
     }
+    
+    
     #check {
         &:checked ~ ul {
             left: 0;
+        }
+
+        &:checked ~ label #btn {
+            display: none;
+        }
+        
+        &:checked ~ label #cancel {
+            display: block;
         }
     }
 
@@ -18,33 +33,37 @@
         display: none;
     }
      
-    nav {
-        font-size: 10px;
+    header {
+        justify-content: space-between;
+        
+        nav {
+            font-size: 10px;
+            
+            ul {
+                background-color: white;
+                position: fixed;
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                
+                top: 3.5rem;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
 
-        ul {
-            background-color: white;
-            position: fixed;
-            display: flex;
-            width: 100%;
-            flex-direction: column;
-            height: 80vh;
-            top: 3.5rem;
-            left: -100%;
-            text-align: center;
-            transition: all .5s;
+                li {
+                    display: block;
+                    line-height: 1.875rem;
 
-            li {
-                display: block;
-                line-height: 1.875rem;
-
-                &.ativo {
-                    background: #55595c;
-                    color: #000000;
+                    &.ativo {
+                        background: #55595c;
+                        color: #000000;
+                    }
+                        a{
+                            
+                            color: black;
+                    }
                 }
-                    a{
-                        
-                        color: black;
-                  }
             }
         }
     }

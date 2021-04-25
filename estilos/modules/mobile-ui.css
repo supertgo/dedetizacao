@@ -8,16 +8,30 @@
   .checkbtn {
     display: block;
   }
+  .checkbtn #cancel {
+    display: none;
+  }
   #check:checked ~ ul {
     left: 0;
+  }
+  #check:checked ~ label #btn {
+    display: none;
+  }
+  #check:checked ~ label #cancel {
+    display: block;
   }
   .midias-sociais {
     display: none;
   }
-  nav {
+  header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header nav {
     font-size: 10px;
   }
-  nav ul {
+  header nav ul {
     background-color: white;
     position: fixed;
     display: -webkit-box;
@@ -28,22 +42,21 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 80vh;
     top: 3.5rem;
     left: -100%;
     text-align: center;
     -webkit-transition: all .5s;
     transition: all .5s;
   }
-  nav ul li {
+  header nav ul li {
     display: block;
     line-height: 1.875rem;
   }
-  nav ul li.ativo {
+  header nav ul li.ativo {
     background: #55595c;
     color: #000000;
   }
-  nav ul li a {
+  header nav ul li a {
     color: black;
   }
 }
