@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,36 +8,57 @@
     <link rel="stylesheet" href="estilos/global.css">
     <link rel="stylesheet" href="estilos/modules/formularioContato.css">
     <script src="https://kit.fontawesome.com/4c5d740a15.js" crossorigin="anonymous"></script>
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
-<body>
 
-    <nav> 
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
-        <ul>
-            
-            <li class="ativo"><a href="index.html"><!--<i class="fa fa-home"></i>-->Inicio</a></li>
-            <li><a href=""><!--<i class="fas fa-layer-group"></i>-->Serviços</a></li>
-            <li><a class="fale-conosco"><!--<i class="far fa-id-card"></i>-->Fale conosco</a></li>
-            <li><a href="./servidor/admin.php"><i class="fas fa-user-shield"></i> Administrador</a></li>
-        </ul>
-    </nav>
+<body>
+    <header>
+        <a href="" class="logo">Logo</a>
+        <nav>
+
+
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+
+
+            <ul>
+
+                <li class="ativo"><a href="index.html">
+                        <!--<i class="fa fa-home"></i>-->Inicio
+                    </a></li>
+                <li><a href="">
+                        <!--<i class="fas fa-layer-group"></i>-->Serviços
+                    </a></li>
+                <li><a class="fale-conosco">
+                        <!--<i class="far fa-id-card"></i>-->Fale conosco
+                    </a></li>
+                <li><a href="./servidor/admin.php"><i class="fas fa-user-shield"></i> Administrador</a></li>
+            </ul>
+
+
+
+        </nav>
+
+
+    </header>
 
     <div class="midias-sociais">
         <a href=""><i class="fab fa-whatsapp-square"></i></a>
         <a href=""><i class="fas fa-envelope-square"></i></a>
     </div>
 
-    <form action="./servidor/mail.php" method="POST" id="formulario-contato"> <!-- Formulário de contato -->
+    <form action="./servidor/mail.php" method="POST" id="formulario-contato">
+        <!-- Formulário de contato -->
         <h1>Preencha o formulário e nos envie uma mensagem!</h1>
         <label>Nome completo</label>
-        <input type="text" name="nome"/>
+        <input type="text" name="nome" />
         <label>E-mail</label>
-        <input type="text" name="email"/>
+        <input type="text" name="email" />
         <label>Telefone</label>
-        <input type="text" name="tel"/>
+        <input type="text" name="tel" />
         <label>Assunto</label>
         <select type="text" name="assunto" id="select-assunto">
             <option key="place-holder">
