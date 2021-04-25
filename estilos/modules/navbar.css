@@ -1,45 +1,72 @@
-
-*{
-    margin: 0;
-    padding: 0; 
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-nav {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    width: 100%;
+header {
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  padding: 1rem;
+  background-color: white;
 }
 
-nav ul li {
-    display: inline-block;
+header .logo {
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transition: 0.6;
+  transition: 0.6;
+  font-family: 'Poppins', sans-serif;
 }
 
-nav ul li a {
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-    padding: 7px 13px;
-}
-.ativo {
-    background: #ffffff96;
-    transition: 1s;
-    border-bottom: 2px solid red;
-}
-
-nav ul li:hover {
-    border-bottom: 2px solid red;
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-nav ul li:last-child {
-    float: right;
+header nav input, header nav label {
+  display: none;
 }
-.checkbtn{
-    float: right;
-    display: none;
-    cursor: pointer;
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-#check {
-    display: none;
+
+header nav ul li {
+  list-style: none;
 }
+
+header nav ul li a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+/*# sourceMappingURL=navbar.css.map */

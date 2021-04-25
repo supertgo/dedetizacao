@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+    #check {
+        &:checked ~ ul {
+            left: 0;
+        }
+    }
+
+    .midias-sociais {
+        display: none;
+    }
+     
+    nav {
+        font-size: 10px;
+
+        ul {
+            background-color: white;
+            position: fixed;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            height: 80vh;
+            top: 3.5rem;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+
+            li {
+                display: block;
+                line-height: 1.875rem;
+
+                &.ativo {
+                    background: #55595c;
+                    color: #000000;
+                }
+                    a{
+                        
+                        color: black;
+                  }
+            }
+        }
+    }
+   
+}
