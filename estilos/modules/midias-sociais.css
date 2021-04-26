@@ -1,24 +1,21 @@
-.midias-sociais {
-    margin-left: 10px;
-    top: 50%;
-    position: fixed;
-    background-color: white;
-    width: min-content;
-    display: flex;
-    flex-direction: column;
-    z-index: 3;
-    padding: 9px;
-    height: 65px;
+.whatsapp-link {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 3.125rem;
+  text-align: center;
+  font-size: 2rem;
+  -webkit-box-shadow: 1px 1px 2px #888;
+          box-shadow: 1px 1px 2px #888;
+  z-index: 1000;
 }
 
-.fa-whatsapp-square{
-    color: green;
-    transform: scale(2.5);
-    border-bottom: 1px solid black;
+.fa-whatsapp {
+  margin-top: 0.1rem;
+  font-size: 2.5rem;
 }
-
-.fa-envelope-square {
-    padding-top: 10px;
-    color: red;
-    transform: scale(2.2);   
-}
+/*# sourceMappingURL=midias-sociais.css.map */

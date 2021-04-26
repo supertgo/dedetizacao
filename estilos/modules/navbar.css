@@ -61,6 +61,14 @@ header nav ul li {
   list-style: none;
 }
 
+header nav ul li.ativo {
+  border-bottom: 2px solid blue;
+}
+
+header nav ul li:hover {
+  border-bottom: 2px solid blue;
+}
+
 header nav ul li a {
   margin: 0 1rem;
   text-decoration: none;

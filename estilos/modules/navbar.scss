@@ -40,6 +40,14 @@ header {
 
             li {
                 list-style: none;
+
+                &.ativo {
+                    border-bottom: 2px solid blue;
+                }
+                &:hover {
+                    border-bottom: 2px solid blue;
+                }
+                
                 a{
                     margin: 0 1rem;
                     text-decoration: none;
@@ -47,6 +55,7 @@ header {
                     font-weight: 500;
                     font-family: 'Poppins', sans-serif;
                     font-weight: bold;
+
                 }
             }
         }
