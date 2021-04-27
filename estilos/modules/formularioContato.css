@@ -3,6 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 6em;
+  display: none;
 }
 
 .informacoes-empresa {
@@ -32,8 +33,8 @@
 .contato form {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   grid-gap: 20px;
 }
 
@@ -50,10 +51,21 @@
 .contato form button, .contato form input, .contato form textarea {
   width: 100%;
   padding: 1em;
+  border: 1px solid #c9e6ff;
 }
 
 .contato form button {
   background: #c9e6ff;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.contato form button:hover, .contato form button:focus {
+  background: #92bde7;
+  color: #fff;
+  outline: 0;
+  -webkit-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
 }
 
 #formulario-contato {

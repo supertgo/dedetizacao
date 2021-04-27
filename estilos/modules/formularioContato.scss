@@ -3,6 +3,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 6em;
+    display: none;
 }
 
 .informacoes-empresa {
@@ -30,7 +31,7 @@
 
     form {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr ;
         grid-gap: 20px;
 
         label {
@@ -45,16 +46,25 @@
         button, input, textarea {
             width: 100%;
             padding: 1em;
+            border: 1px solid #c9e6ff;
         }
 
         button {
             background: #c9e6ff;
+            border: 0;
+            text-transform: uppercase;
+
+            &:hover, &:focus {
+                background: #92bde7;
+                color: #fff;
+                outline: 0;
+                transition: background-color .2s ease-in-out;
+            }
         }
     }
 }
 
 #formulario-contato {
-    
     flex-direction: column;
     
 }
