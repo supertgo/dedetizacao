@@ -1,0 +1,60 @@
+.formulario {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6em;
+}
+
+.informacoes-empresa {
+    background: #c9e6ff;
+
+    ul {
+        text-align: center;
+        margin: 0 0 1rem 0;
+        list-style: none;
+        padding: 0;
+
+    }
+}
+
+.container-formulario {
+    box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+
+    & > * {
+        padding: 1em;
+    }
+}
+
+.contato {
+    background: #f9feff;
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+
+        label {
+            display: block;
+
+        }
+
+        input[type=submit] {
+            grid-column: 1 / 3;
+        }
+
+        button, input, textarea {
+            width: 100%;
+            padding: 1em;
+        }
+
+        button {
+            background: #c9e6ff;
+        }
+    }
+}
+
+#formulario-contato {
+    
+    flex-direction: column;
+    
+}
