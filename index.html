@@ -53,26 +53,50 @@
             <i class="fa fa-whatsapp"></i>
         </a>
     </div>
+    <div class="formulario">
+        <div class="container-formulario">
+            <div class="informacoes-empresa">
+                <h3>Tecno Dedetizadora</h1>
+                    <ul>
+                        <li>Endereço</li>
+                        <li>(31) 3442-4920 / 99104-5584</li>
+                        <li>sandresandro@gmail.com</li>
+                    </ul>
+            </div>
+            <div class="contato">
+                <h3>Preencha o formulário e nos envie uma mensagem!</h3>
+                <form action="./servidor/mail.php" method="POST" id="formulario-contato">
+                    <!-- Formulário de contato -->
 
-    <form action="./servidor/mail.php" method="POST" id="formulario-contato">
-        <!-- Formulário de contato -->
-        <h1>Preencha o formulário e nos envie uma mensagem!</h1>
-        <label>Nome completo</label>
-        <input type="text" name="nome" />
-        <label>E-mail</label>
-        <input type="text" name="email" />
-        <label>Telefone</label>
-        <input type="text" name="tel" />
-        <label>Assunto</label>
-        <select type="text" name="assunto" id="select-assunto">
-            <option key="place-holder">
-                Selecione o assunto
-            </option>
-        </select>
-        <label>Mensagem</label>
-        <textarea type="text" name="msg"></textarea>
-        <button type="submit">Enviar</button>
-    </form>
+                    <label>Nome completo
+                        <input type="text" name="nome" />
+                    </label>
+
+                    <label>E-mail
+                        <input type="email" name="email" />
+                    </label>
+
+                    <label>Telefone
+                        <input type="text" name="tel" />
+                    </label>
+
+                    <label>Assunto
+                        <select type="text" name="assunto" id="select-assunto">
+                            <option key="place-holder">
+                                Selecione o assunto
+                            </option>
+                        </select>
+                    </label>
+
+                    <label>Mensagem
+                        <textarea type="text" name="msg" rows="5"></textarea>
+                    </label>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div></div>
