@@ -1,13 +1,21 @@
 .formulario {
-  max-width: 1170px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-  padding: 6em;
+  padding: 1rem;
+  padding-top: 7rem;
   display: none;
 }
 
 .informacoes-empresa {
   background: #c9e6ff;
+}
+
+.informacoes-empresa h3 {
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
 }
 
 .informacoes-empresa ul {
@@ -18,8 +26,8 @@
 }
 
 .container-formulario {
-  -webkit-box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
-          box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+  -webkit-box-shadow: 0 0 1.25rem 0 rgba(72, 94, 116, 0.7);
+          box-shadow: 0 0 1.25rem 0 rgba(72, 94, 116, 0.7);
 }
 
 .container-formulario > * {
@@ -35,7 +43,7 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  grid-gap: 20px;
+  grid-gap: 1.25rem;
 }
 
 .contato form label {

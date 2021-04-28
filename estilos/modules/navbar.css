@@ -19,12 +19,12 @@ header {
   -webkit-transition: 0.6s;
   transition: 0.6s;
   padding: 1rem;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.747);
 }
 
 header .logo {
   font-weight: 700;
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 2em;
   text-transform: uppercase;
@@ -62,17 +62,17 @@ header nav ul li {
 }
 
 header nav ul li.ativo {
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid red;
 }
 
 header nav ul li:hover {
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid red;
 }
 
 header nav ul li a {
   margin: 0 1rem;
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
