@@ -10,29 +10,28 @@
     <script src="https://kit.fontawesome.com/4c5d740a15.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" />
 
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <a href="" class="logo">Logo</a>
+        <a href="#" class="logo">Logo</a>
         <nav>
-
-
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars" id="btn"></i>
                 <i class="fas fa-times" id="cancel"></i>
             </label>
 
-
             <ul>
-
                 <li class="ativo"><a href="index.html">
                         <!--<i class="fa fa-home"></i>-->Inicio
                     </a></li>
-                <li><a href="">
+                <li><a href="#">
                         <!--<i class="fas fa-layer-group"></i>-->Serviços
                     </a></li>
                 <li><a href="#" class="fale-conosco">
@@ -40,12 +39,7 @@
                     </a></li>
                 <li><a href="./servidor/admin.php"><i class="fas fa-user-shield"></i> Administrador</a></li>
             </ul>
-
-
-
         </nav>
-
-
     </header>
 
     <div class="midias-sociais">
@@ -54,13 +48,14 @@
         </a>
     </div>
     <div class="formulario">
-        <div class="container-formulario">
+        <div class="container-formulario" animated bouceInLeft>
             <div class="informacoes-empresa">
                 <h3>Tecno Dedetizadora</h1>
                     <ul>
-                        <li>Endereço</li>
-                        <li>(31) 3442-4920 / 99104-5584</li>
-                        <li>sandresandro@gmail.com</li>
+                        <li><i class="fa fa-road"></i> Endereço</li>
+                        <li><i class="fa fa-envelope"></i> sandresandro@gmail.com</li>
+                        <li><i class="fa fa-phone"></i> (31) 3442-4920 /(31) 99104-5584</li>
+
                     </ul>
             </div>
             <div class="contato">
@@ -69,19 +64,19 @@
                     <!-- Formulário de contato -->
 
                     <label>Nome completo
-                        <input type="text" name="nome" />
+                        <input type="text" name="nome" required />
                     </label>
 
                     <label>E-mail
-                        <input type="email" name="email" />
+                        <input type="email" name="email" required />
                     </label>
 
                     <label>Telefone
-                        <input type="text" name="tel" />
+                        <input type="text" name="tel" required />
                     </label>
 
                     <label>Assunto
-                        <select type="text" name="assunto" id="select-assunto">
+                        <select type="text" name="assunto" id="select-assunto" required>
                             <option key="place-holder">
                                 Selecione o assunto
                             </option>
@@ -89,7 +84,7 @@
                     </label>
 
                     <label>Mensagem
-                        <textarea type="text" name="msg" rows="5"></textarea>
+                        <textarea type="text" name="msg" rows="5"></textarea required>
                     </label>
 
                     <button type="submit">Enviar</button>
@@ -98,10 +93,53 @@
         </div>
     </div>
 
-    <footer>
-        <div></div>
-        <div class="direitos">
-            <p>Tecno Dedetizador LTDA@Todos os direitos reservados</p>
+    <footer class="footer">
+        <div class="footer-esquerda">
+            <h1 class="footer-logo-text">Logo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto fugiat consectetur repellendus, error eligendi perspiciatis vel explicabo quam soluta non, culpa nihil distinctio. Quaerat pariatur rerum repudiandae fugit dolorem quisquam.</p>
+            <div class="footer-sociais">
+                <a href="#"><i class="fa fa-whatsapp"></i></a>
+            </div>
+
+        </div>
+        <ul class="footer-direita">
+            <li>
+                <h2>Serviços</h2>
+
+                <ul class="caixa">
+                    <li> <a href="#">Formigas</a> </li>
+                    <li> <a href="#">Escorpião</a> </li>
+                    <li> <a href="#">Desratização</a> </li>
+                    <li> <a href="#">Descupinização</a> </li>
+                    <li> <a href="#">Lavagem Caixa d´agua</a> </li>
+                </ul>
+            </li>
+
+            <li class="setores">
+                <h2>Segmentos</h2>
+
+                <ul class="caixa">
+                    <li> <a href="#">Setor 1</a> </li>
+                    <li> <a href="#">Setor 2</a> </li>
+                    <li> <a href="#">Setor 3</a> </li>
+                    <li> <a href="#">Setor 4</a> </li>
+                    <li> <a href="#">Setor 5</a> </li>
+                   
+                </ul>
+            </li>
+
+            <li>
+                <h2>Endereço</h2>
+
+                <ul class="caixa">
+                    <li> <a href="#">X</a> </li>
+                    <li> <a href="#">Aparecida</a></li>
+                    <li> <a href="#">Belo Horizonte</a></li>
+                    <li> <a href="#">Brasil</a></li>
+                </ul>
+            </li>
+        </ul>
+        
         </div>
     </footer>
     <script src="./js/global.js"></script>
