@@ -1,0 +1,12 @@
+@media (min-width: 768px) {
+  .container-formulario {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .container-formulario > * {
+    padding: 2em;
+  }
+}
+/*# sourceMappingURL=mobile-formularioContato.css.map */

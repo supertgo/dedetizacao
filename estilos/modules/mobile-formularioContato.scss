@@ -1,0 +1,13 @@
+@media (min-width: 768px){
+    
+    .container-formulario {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        & > * {
+            padding: 2em;
+        }
+    }
+
+
+}
