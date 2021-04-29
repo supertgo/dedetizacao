@@ -12,7 +12,8 @@ header {
     align-items: center;
     transition: 0.6s;
     padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.747);
+    background-color: rgb(0, 0, 0);
+    z-index: 1000;
     
 
     .logo {
@@ -32,6 +33,7 @@ header {
 
         input, label{
             display: none;
+            color: white;
         }
 
         ul {

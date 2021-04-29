@@ -1,12 +1,19 @@
+footer {
+  bottom: 0px;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 10rem;
   padding-top: 2rem;
-  left: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.747);
+  padding-bottom: 2rem;
+  left: 0px;
+  background: #111;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer > * {
@@ -38,8 +45,20 @@
 }
 
 .footer-esquerda p {
-  padding-right: 20%;
   color: white;
+}
+
+.footer-esquerda .footer-sociais {
+  background: #1a1a1a;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-esquerda .footer-sociais a i {
+  color: #e7f2f4;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 5px;
 }
 
 .footer-direita {
@@ -60,27 +79,18 @@
 }
 
 .footer-direita h2 {
-  color: #e93e3e;
+  text-transform: uppercase;
+  color: #fff;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 1.5rem;
 }
 
 .caixa a {
   color: white;
 }
 
-.footer-sociais {
-  background: #364a62;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.footer-sociais a i {
-  color: #e7f2f4;
-  padding-right: 10px 12px;
-  font-size: 20px;
+.caixa a:hover {
+  color: #e93e3e;
 }
 
 footer-logo-text {
@@ -107,17 +117,16 @@ footer-logo-text {
 
 @media (max-width: 768px) {
   .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 1rem;
-  }
-  .footer ul {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 /*# sourceMappingURL=footer.css.map */

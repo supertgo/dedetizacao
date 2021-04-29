@@ -1,0 +1,48 @@
+#servicos {
+  min-height: 50vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  background-position: center;
+  background-size: cover;
+}
+
+#servicos h1 {
+  padding-top: 5.625rem;
+  font-size: 2rem;
+  color: white;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 5rem;
+}
+
+#servicos .servicos-conteudo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#servicos .servicos-conteudo .servico-unico {
+  position: relative;
+  width: 30%;
+  height: 320px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 15px;
+}
+
+#servicos .servicos-conteudo .servico-unico h3 {
+  text-align: center;
+}
+
+#servicos .servicos-conteudo .servico-unico .servicos-icone {
+  text-align: center;
+}
+/*# sourceMappingURL=servicos.css.map */
