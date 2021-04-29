@@ -5,10 +5,11 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
   background-position: center;
   background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 #servicos h1 {
-  padding-top: 5.625rem;
   font-size: 2rem;
   color: white;
   font-family: sans-serif;
@@ -19,23 +20,28 @@
 }
 
 #servicos .servicos-conteudo {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 #servicos .servicos-conteudo .servico-unico {
   position: relative;
-  width: 30%;
-  height: 320px;
+  width: 20%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 15px;
+  padding: 30px;
+}
+
+#servicos .servicos-conteudo .servico-unico:hover {
+  -webkit-box-shadow: 0 0 10px 0 #ffffff;
+          box-shadow: 0 0 10px 0 #ffffff;
 }
 
 #servicos .servicos-conteudo .servico-unico h3 {
@@ -44,5 +50,20 @@
 
 #servicos .servicos-conteudo .servico-unico .servicos-icone {
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .servicos-conteudo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=servicos.css.map */

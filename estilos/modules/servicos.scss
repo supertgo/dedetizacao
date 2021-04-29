@@ -5,10 +5,11 @@
         linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
     background-position: center;
     background-size: cover;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     
 
     h1 {
-        padding-top: 5.625rem;
         font-size: 2rem;
         color: white;
         font-family: sans-serif;
@@ -20,17 +21,21 @@
     }
 
     .servicos-conteudo {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-
+        justify-content: space-evenly;
 
         .servico-unico {
             position: relative;
-            width: 30%;
-            height: 320px;
+            width: 20%;
             box-sizing: border-box;
-            padding: 0 15px;
+            padding: 30px;
+
+            &:hover {
+                box-shadow: 0 0 10px 0 #ffffff;
+            }
+            
 
             h3 {
                 text-align: center;
@@ -41,7 +46,13 @@
             }
             
         }
-    }
+    } 
+}
 
-    
+@media (max-width: 768px){
+    .servicos-conteudo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
