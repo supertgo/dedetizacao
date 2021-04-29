@@ -1,0 +1,52 @@
+#wrapper-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 105rem;
+    margin-top: 6%;
+      margin-bottom: 6%;
+  }
+  
+  #slider {
+    width: 650px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  #slides {
+    width: 1600%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slide {
+    width: 6.25%;
+    transition: 1s;
+  }
+  
+  .proxima-imagem i, .imagem-previa i {
+    font-size: 3.5rem;
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .proxima-imagem i:hover, .imagem-previa i:hover {
+    transform: scale(1.4);
+    filter: brightness(1.1);
+  }
+  
+  .slide img {
+    border-radius: 25px;
+    width: 400px;
+    height: 400px;
+  }
+  
+  #wrapper-slider button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    margin: 8%;
+  }

@@ -1,21 +1,19 @@
 #inicio {
-  min-height: calc(80vh - 2rem);
-  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.7)), to(rgba(4, 9, 30, 0.7))), url(/imagens/home.png);
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/imagens/home.png);
-  background-position: center;
-  background-size: cover;
+  font-family: "Poppins", sans-serif;
+
 }
 
 #inicio .texto-principal {
-  width: 90%;
+  width: 40vw;
   color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   text-align: center;
+  margin: 2%;
 }
 
 #inicio .texto-principal h1 {
@@ -38,10 +36,8 @@
   position: relative;
 }
 
-#inicio .texto-principal .inicio-btn:hover {
-  border: 1px solid #f44336;
-  background: #f44336;
-  -webkit-transition: 1s;
-  transition: 1s;
+.inicio-btn {
+  background-color: #f44336 !important;
 }
+
 /*# sourceMappingURL=inicio.css.map */
