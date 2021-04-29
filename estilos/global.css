@@ -10,3 +10,24 @@ body {
     height: 100vh;
     background-color: rgb(255, 255, 255); /*So mudei para ficar mais confortavel */
 }
+
+.whatsapp-link {
+    bottom: 2%;
+    right: 2%;
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    transition: 0.1s;
+}
+
+.whatsapp-link:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+@media (max-width: 768px) {
+    .whatsapp-link {
+        width: 40px;
+        height: 40px;
+    }
+}
