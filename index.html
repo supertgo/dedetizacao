@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/global.css">
+    <link rel="stylesheet" href="estilos/modules/galeria.css">
     <link rel="stylesheet" href="estilos/modules/formularioContato.css">
     <script src="https://kit.fontawesome.com/4c5d740a15.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -41,7 +42,7 @@
             </ul>
         </nav>
     </header>
-    <section id="inicio">
+    <div id="inicio">
         <div class="texto-principal">
             <h1>Tecno Dedetizadora LTDA</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deserunt ex, odit, vero totam modi
@@ -50,9 +51,26 @@
                 consequuntur.</p>
             <a href="#servicos" class="inicio-btn">Contrate nossos serviços</a>
         </div>
-    </section>
 
-    <section id="servicos">
+        <div id="wrapper-slider">
+            <button class="imagem-previa">
+              <i class="fas fa-arrow-circle-left"></i> <!-- Galeria -->
+            </button>
+  
+            <div id="slider">
+              <div id="slides">
+                <!-- Imagens adcionadas dinamicamente -->
+              </div>
+            </div>
+  
+            <button class="proxima-imagem">
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+  
+          </div>
+    </div>
+
+    <div id="servicos">
         <h1>Nossos Serviços</h1>
         <div class="servicos-conteudo">
 
@@ -81,12 +99,10 @@
 
             </div>
         </div>
-    </section>
-    <div class="midias-sociais">
-        <a href="https://api.whatsapp.com/send?phone=5531991045584" class="whatsapp-link" target="_blank">
-            <i class="fa fa-whatsapp"></i>
-        </a>
     </div>
+        <a href="https://api.whatsapp.com/send?phone=5531991045584">
+            <img src='./imagens/zap.png' class="whatsapp-link">
+        </a>
 
     <div class="formulario">
         <div class="container-formulario" animated bouceInLeft>
@@ -135,7 +151,7 @@
     </div>
 
     <footer class="footer">
-        <div class="footer-esquerda">
+        <!--<div class="footer-esquerda">
             <h1 class="footer-logo-text">Logo</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto fugiat consectetur repellendus, error eligendi perspiciatis vel explicabo quam soluta non, culpa nihil distinctio. Quaerat pariatur rerum repudiandae fugit dolorem quisquam.</p>
             <div class="footer-sociais">
@@ -181,9 +197,37 @@
             </li>
         </ul>
         
+        </div>-->
+        <div class="footer-info">
+            <h3>Localização</h3>
+            <span>Tecno Dedetizadora LTDA - Rua Raimundo Mafra,  67 , casa 1, Gravará -  Florianópolis SC</span>
+            <a href="#">VEJA MAIS</a>
+        </div>
+
+        <div class="footer-info-centro">
+            <div id="horario-abertura">
+                <h3>Horário de funcionamento</h3>
+                <div>
+                    <span>Segunda - Sexta</span>
+                        <span>6:30 - 18:00</span>
+                        <br/>
+                        <span>Sábado - </span>
+                        <span>Horário e preço a combinar</span>
+                </div>                    
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <h3>Fale conosco</h3>
+            <span>E-mail - sandresandro@ymail.com<br>Tel - (47) 98888-8888</span>
+            <a href="#">ENVIE UMA MENSAGEM</a>
+            <div>
+                <a href="https://api.whatsapp.com/send?phone=COLOCOCA O TELEFONE DO CARA AQUI CAZARES"><i class="fab fa-whatsapp fa-lg"></i></a>
+            </div>
         </div>
     </footer>
     <script src="./js/global.js"></script>
+    <script src="./js/modules/galeria.js"></script>
     <script src="./js/modules/servicosModal.js"></script>
     <script src="./js/modules/formularioContato.js"></script>
     <script src="js/modules/alterna-classe-ativo.js"></script>

@@ -3,38 +3,28 @@ let selectAssunto = document.querySelector('#select-assunto');
 
 const servicos = [
     {
-        nome: "Serviço 1",
+        nome: "Formigas",
         id: 1
     },
 
     {
-        nome: "Serviço 2",
+        nome: "Escorpião",
         id: 2
     },
 
     {
-        nome: "Serviço 3",
+        nome: "Desratização",
         id: 3
     },
 
     {
-        nome: "Serviço 4",
+        nome: "Descupinização",
         id: 4
     },
 
     {
-        nome: "Serviço 5",
+        nome: "Lavagem Caixa d´agua",
         id: 5
-    },
-
-    {
-        nome: "Serviço 6",
-        id: 6
-    },
-
-    {
-        nome: "Outro",
-        id: 7
     },
 
 ];
