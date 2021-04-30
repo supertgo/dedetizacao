@@ -5,7 +5,9 @@
 }
 
 header {
-    position: fixed;
+    position: sticky;
+    top: 0;
+    left: 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -34,6 +36,7 @@ header {
         input, label{
             display: none;
             color: white;
+            font-size: 2rem;
         }
 
         ul {

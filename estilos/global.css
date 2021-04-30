@@ -1,9 +1,4 @@
-@import url(modules/footer.css);
-@import url(modules/midias-sociais.css);
-@import url(modules/navbar.css);
-@import url(modules/mobile-ui.css);
-@import url(modules/inicio.css);
-@import url(modules/servicos.css);
+@import url(./modules/main.css);
 
 body {
     width: 100%;

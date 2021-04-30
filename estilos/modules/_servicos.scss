@@ -1,15 +1,14 @@
 #servicos {
-    min-height: 50vh;
-    width: 100%;
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
-    background-position: center;
-    background-size: cover;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    
+    height: 80vh;
+    width: 100vw;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1)));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    
     
 
     h1 {
+        padding-top: 5.625rem;
         font-size: 2rem;
         color: white;
         font-family: sans-serif;
@@ -17,20 +16,25 @@
         text-align: center;
         text-transform: uppercase;
         padding-bottom: 5rem;
-        
     }
 
     .servicos-conteudo {
-        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+        justify-content: space-between;
 
         .servico-unico {
             position: relative;
-            width: 20%;
-            box-sizing: border-box;
-            padding: 30px;
+            width: 30%;
+            height: 320px;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+            padding: 0 15px;
 
             &:hover {
                 box-shadow: 0 0 10px 0 #ffffff;
