@@ -17,6 +17,10 @@
     .checkbtn{
         display: block;
 
+        & > * {
+            font-size: 2rem;
+        }
+
         #cancel {
             display: none;
         }
@@ -24,6 +28,7 @@
     }
     
     #check {
+        
         &:checked ~ ul {
             left: 0;
         }
