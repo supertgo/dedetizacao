@@ -1,12 +1,9 @@
 #servicos {
-    
-    height: 80vh;
-    width: 100vw;
+    width: 100%;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1)));
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    justify-items: center;
     
-    
-
     h1 {
         padding-top: 5.625rem;
         font-size: 2rem;
@@ -19,28 +16,18 @@
     }
 
     .servicos-conteudo {
-        display: -webkit-box;
-        display: -ms-flexbox;
+        width: 100vw;
         display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-around;
 
         .servico-unico {
-            position: relative;
-            width: 30%;
-            height: 320px;
-            -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-            padding: 0 15px;
-
-            &:hover {
-                box-shadow: 0 0 10px 0 #ffffff;
-            }
-            
-
+            width: 26%;
+            padding: 2rem;
+            box-shadow: 0 0 10px 0 #ffffff;
+            margin-bottom: 2rem;
+            border-radius: 2rem;
+        
             h3 {
                 text-align: center;
             }
@@ -55,8 +42,12 @@
 
 @media (max-width: 768px){
     .servicos-conteudo {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+        align-items: center;
+
+        .servico-unico {
+            width: 45% !important;
+            height: 100%;
+            align-items: center;
+        }
     }
 }
