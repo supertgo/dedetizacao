@@ -7,8 +7,7 @@
 }
 
 header {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -20,6 +19,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
   -webkit-transition: 0.6s;
   transition: 0.6s;
   padding: 1rem;
@@ -102,6 +103,9 @@ header nav ul li a {
   .checkbtn {
     display: block;
   }
+  .checkbtn > * {
+    font-size: 2rem;
+  }
   .checkbtn #cancel {
     display: none;
   }
@@ -130,7 +134,7 @@ header nav ul li a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    top: 3.5rem;
+    top: 4rem;
     left: -100%;
     text-align: center;
     -webkit-transition: all .5s;
@@ -150,7 +154,8 @@ header nav ul li a {
 }
 
 #inicio {
-  width: 100%;
+  width: 100vw;
+  height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,11 +167,11 @@ header nav ul li a {
   text-align: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.7)), to(rgba(4, 9, 30, 0.7))), url(/imagens/home.png);
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/imagens/home.png);
+  background-size: cover;
   font-family: "Poppins", sans-serif;
 }
 
 #inicio .texto-principal {
-  width: 40vw;
   color: #fff;
   text-align: center;
   margin: 2%;
@@ -196,10 +201,10 @@ header nav ul li a {
 }
 
 #servicos {
-  height: 80vh;
-  width: 100vw;
+  width: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1)));
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  justify-items: center;
 }
 
 #servicos h1 {
@@ -214,28 +219,23 @@ header nav ul li a {
 }
 
 #servicos .servicos-conteudo {
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #servicos .servicos-conteudo .servico-unico {
-  position: relative;
-  width: 30%;
-  height: 320px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0 15px;
-}
-
-#servicos .servicos-conteudo .servico-unico:hover {
+  width: 26%;
+  padding: 2rem;
   -webkit-box-shadow: 0 0 10px 0 #ffffff;
           box-shadow: 0 0 10px 0 #ffffff;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
 }
 
 #servicos .servicos-conteudo .servico-unico h3 {
@@ -248,16 +248,18 @@ header nav ul li a {
 
 @media (max-width: 768px) {
   .servicos-conteudo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .servicos-conteudo .servico-unico {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -373,8 +375,8 @@ footer {
   background: #111;
   text-align: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer > * {
