@@ -6,12 +6,10 @@
     
     h1 {
         padding-top: 5.625rem;
-        font-size: 2rem;
+        font-size: 3rem;
         color: white;
         font-family: sans-serif;
-        letter-spacing: 2px;
         text-align: center;
-        text-transform: uppercase;
         padding-bottom: 5rem;
     }
 
@@ -24,7 +22,7 @@
         .servico-unico {
             width: 26%;
             padding: 2rem;
-            box-shadow: 0 0 10px 0 #ffffff;
+            box-shadow: 1px 1px 10px 1px #000000;
             margin-bottom: 2rem;
             border-radius: 2rem;
         
@@ -32,8 +30,14 @@
                 text-align: center;
             }
 
-            .servicos-icone {
-                text-align: center;
+            .servico-icone {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 3.125rem;
+                    height: 3.125rem;
+                }
             }
             
         }
