@@ -1,10 +1,8 @@
 footer {
     bottom: 0px;
 }
+
 .footer {
-    
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -12,9 +10,12 @@ footer {
     font-family: "Poppins", sans-serif;
     background: #111;
     text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
+
+    #footer-info-email{
+        padding-left: 2px;
+        display: inline-block;
+    }
 
     & > * {
         -webkit-box-flex: 1;

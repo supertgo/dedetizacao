@@ -155,7 +155,7 @@ header nav ul li a {
 
 #inicio {
   width: 100vw;
-  height: 80%;
+  height: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,12 +209,10 @@ header nav ul li a {
 
 #servicos h1 {
   padding-top: 5.625rem;
-  font-size: 2rem;
+  font-size: 3rem;
   color: white;
   font-family: sans-serif;
-  letter-spacing: 2px;
   text-align: center;
-  text-transform: uppercase;
   padding-bottom: 5rem;
 }
 
@@ -232,8 +230,8 @@ header nav ul li a {
 #servicos .servicos-conteudo .servico-unico {
   width: 26%;
   padding: 2rem;
-  -webkit-box-shadow: 0 0 10px 0 #ffffff;
-          box-shadow: 0 0 10px 0 #ffffff;
+  -webkit-box-shadow: 1px 1px 10px 1px #000000;
+          box-shadow: 1px 1px 10px 1px #000000;
   margin-bottom: 2rem;
   border-radius: 2rem;
 }
@@ -242,8 +240,18 @@ header nav ul li a {
   text-align: center;
 }
 
-#servicos .servicos-conteudo .servico-unico .servicos-icone {
-  text-align: center;
+#servicos .servicos-conteudo .servico-unico .servico-icone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#servicos .servicos-conteudo .servico-unico .servico-icone img {
+  width: 3.125rem;
+  height: 3.125rem;
 }
 
 @media (max-width: 768px) {
@@ -375,6 +383,11 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.footer #footer-info-email {
+  padding-left: 2px;
+  display: inline-block;
 }
 
 .footer > * {
