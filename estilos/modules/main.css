@@ -135,7 +135,6 @@ header nav ul li a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 25%;
     top: 4rem;
     left: -100%;
     text-align: center;
@@ -149,7 +148,6 @@ header nav ul li a {
   header nav ul li.ativo {
     background: #ffffff;
     color: #000000;
-    border: none;
   }
   header nav ul li a {
     color: black;
@@ -208,19 +206,20 @@ header nav ul li a {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1)));
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
   justify-items: center;
-  background-color: white;
 }
 
-#servicos h1 {
+h1 {
   padding-top: 5.625rem;
   font-size: 3rem;
-  color: white;
-  font-family: sans-serif;
+  color: black;
   text-align: center;
+  font-family: "Open sans", sans-serif;
   padding-bottom: 5rem;
 }
 
-#servicos .servicos-conteudo {
+.servicos-conteudo {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,20 +230,28 @@ header nav ul li a {
       justify-content: space-around;
 }
 
-#servicos .servicos-conteudo .servico-unico {
+.servicos-conteudo .servico-unico:hover {
+  -webkit-box-shadow: 0px 0px 5px red;
+          box-shadow: 0px 0px 5px red;
+  cursor: pointer;
+}
+
+.servicos-conteudo .servico-unico {
   width: 26%;
   padding: 2rem;
   -webkit-box-shadow: 1px 1px 10px 1px #000000;
           box-shadow: 1px 1px 10px 1px #000000;
   margin-bottom: 2rem;
   border-radius: 2rem;
-}
-
-#servicos .servicos-conteudo .servico-unico h3 {
+  font-family: "Open sans", sans-serif;
   text-align: center;
 }
 
-#servicos .servicos-conteudo .servico-unico .servico-icone {
+.servicos-conteudo .servico-unico h3, .servicos-conteudo .servico-unico p {
+  text-align: center;
+}
+
+.servicos-conteudo .servico-unico .servico-icone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,7 +260,7 @@ header nav ul li a {
           justify-content: center;
 }
 
-#servicos .servicos-conteudo .servico-unico .servico-icone img {
+.servicos-conteudo .servico-unico .servico-icone img {
   width: 3.125rem;
   height: 3.125rem;
 }
@@ -275,7 +282,7 @@ header nav ul li a {
 
 :root {
   --white: #dfdfdf;
-  --red: #e31b23;
+  --red: #665051;
   --bodyColor: #292a2b;
   --borderFormEls: hsl(0, 0%, 10%);
   --bgFormEls: hsl(0, 0%, 21%);

@@ -3,21 +3,28 @@
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1)));
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
     justify-items: center;
+}
     
     h1 {
         padding-top: 5.625rem;
         font-size: 3rem;
-        color: white;
-        font-family: sans-serif;
+        color: rgb(0, 0, 0);
         text-align: center;
+        font-family: "Open sans", sans-serif;
         padding-bottom: 5rem;
     }
 
     .servicos-conteudo {
+        box-sizing: border-box;
         width: 100vw;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+
+        .servico-unico:hover {
+            box-shadow: 0px 0px 5px red;
+            cursor: pointer;
+        }
 
         .servico-unico {
             width: 26%;
@@ -25,8 +32,10 @@
             box-shadow: 1px 1px 10px 1px #000000;
             margin-bottom: 2rem;
             border-radius: 2rem;
+            font-family: "Open sans", sans-serif;
+            text-align: center;
         
-            h3 {
+            h3, p {
                 text-align: center;
             }
 
@@ -42,7 +51,6 @@
             
         }
     } 
-}
 
 @media (max-width: 768px){
     .servicos-conteudo {
