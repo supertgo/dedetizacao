@@ -16,6 +16,7 @@
 
     .checkbtn{
         display: block;
+        padding-right: 1rem;
 
         & > * {
             font-size: 2rem;
@@ -55,7 +56,7 @@
                 width: 100%;
                 flex-direction: column;
                 
-                top: 3.5rem;
+                top: 4rem;
                 left: -100%;
                 text-align: center;
                 transition: all .5s;

@@ -102,6 +102,7 @@ header nav ul li a {
   }
   .checkbtn {
     display: block;
+    padding-right: 1rem;
   }
   .checkbtn > * {
     font-size: 2rem;
