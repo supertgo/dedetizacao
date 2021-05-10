@@ -166,8 +166,8 @@ header nav ul li a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.7)), to(rgba(4, 9, 30, 0.7))), url(/imagens/home.png);
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/imagens/home.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.7)), to(rgba(4, 9, 30, 0.7))), url(../estilos/imagens/home.png);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../estilos/imagens/home.png);
   background-size: cover;
   font-family: "Poppins", sans-serif;
 }

@@ -4,17 +4,17 @@ let imagemPrevia = document.querySelector(".imagem-previa");
 
 const fotos = [
   {
-    img: "./imagens/zap.png",
+    img: "./estilos/imagens/zap.png",
     id: 1,
   },
 
   {
-    img: "./imagens/scorpion.png",
+    img: "./estilos/imagens/scorpion.png",
     id: 2,
   },
 
   {
-    img: "./imagens/home.png",
+    img: "./estilos/imagens/home.png",
     id: 3,
   },
 ];
