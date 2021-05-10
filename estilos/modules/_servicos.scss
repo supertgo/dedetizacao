@@ -3,7 +3,7 @@
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1)));
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
     justify-items: center;
-}
+
     
     h1 {
         padding-top: 5.625rem;
@@ -51,6 +51,7 @@
             
         }
     } 
+}   
 
 @media (max-width: 768px){
     .servicos-conteudo {
