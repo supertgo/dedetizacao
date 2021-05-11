@@ -10,14 +10,15 @@
 .container-formulario {
     font-family: "Open sans", sans-serif;
     box-shadow: 0 0 1.25rem 0 var(--red);
-
+    display: grid;
+    grid-template-columns: 2fr;
+    
     & > * {
         padding: 1em;
     }
 }
 
 #formulario {
-    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
@@ -25,6 +26,8 @@
     display: flex;
     justify-content: center;
     color: var(--white);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1)));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
 }
 
 .informacoes-empresa {
@@ -55,7 +58,6 @@
 
     form {
         display: grid;
-        grid-template-columns: 1fr ;
         grid-gap: 1.25rem;
 
         label {
@@ -111,16 +113,12 @@
     flex-direction: column;
 }
 
-@media (min-width: 768px){
+@media(min-width: 768px){
     
     .container-formulario {
-        display: grid;
-        grid-template-columns: 1fr 1fr; 
-
+        
         & > * {
             padding: 2em;
         }
     }
-
-
 }

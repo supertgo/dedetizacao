@@ -294,6 +294,10 @@ header nav ul li a {
   font-family: "Open sans", sans-serif;
   -webkit-box-shadow: 0 0 1.25rem 0 var(--red);
           box-shadow: 0 0 1.25rem 0 var(--red);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr;
+      grid-template-columns: 2fr;
 }
 
 .container-formulario > * {
@@ -301,7 +305,6 @@ header nav ul li a {
 }
 
 #formulario {
-  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   padding: 1em;
@@ -313,6 +316,8 @@ header nav ul li a {
       -ms-flex-pack: center;
           justify-content: center;
   color: var(--white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
 }
 
 .informacoes-empresa {
@@ -342,8 +347,6 @@ header nav ul li a {
 .contato form {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
   grid-gap: 1.25rem;
 }
 
@@ -406,24 +409,6 @@ header nav ul li a {
 }
 
 @media (min-width: 768px) {
-  .container-formulario {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
-  .container-formulario > * {
-    padding: 2em;
-  }
-}
-
-@media (min-width: 768px) {
-  .container-formulario {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
   .container-formulario > * {
     padding: 2em;
   }
