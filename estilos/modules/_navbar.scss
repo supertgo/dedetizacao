@@ -46,6 +46,7 @@ header {
 
             li {
                 list-style: none;
+                transition: 0.7s;
 
                 &.ativo {
                     border-bottom: 2px solid rgb(255, 0, 0);
