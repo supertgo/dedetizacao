@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <a href="#" class="logo">Logo</a>
+        <a href="#" class="logo"><img src="./estilos/imagens/logo_DedetizadoraLTDA.png" alt=""></a>
         <nav>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
@@ -25,16 +25,18 @@
             </label>
 
             <ul>
-                <li class="ativo"><a href="#inicio">
-                        <!--<i class="fa fa-home"></i>-->Inicio
-                    </a></li>
-                <li><a href="#servicos">
-                        <!--<i class="fas fa-layer-group"></i>-->Serviços
-                    </a></li>
-                <li><a href="#formulario" class="fale-conosco">
-                        <!--<i class="far fa-id-card"></i>-->Fale conosco
-                    </a></li>
-                <li><a href="./servidor/admin.php"><i class="fas fa-user-shield"></i> Administrador</a></li>
+                <a href="#inicio">
+                    <li class="ativo">Inicio</li>
+                </a>
+                <a href="#servicos">
+                    <li>Serviços</li>
+                </a>
+                <a href="#formulario" class="fale-conosco">
+                    <li>Fale conosco</li>
+                </a>
+                <a href="./servidor/admin.php"><i class="fas fa-user-shield"></i>
+                    <li>Administrador</li>
+                </a>
             </ul>
         </nav>
     </header>
@@ -99,9 +101,13 @@
             </div>
         </div>
     </div>
-    <a href="https://api.whatsapp.com/send?phone=5531991045584">
-        <img src='./estilos/imagens/zap.png' class="whatsapp-link">
-    </a>
+
+    <div class="alert-wpp">
+        <a href="https://api.whatsapp.com/send?phone=5531991045584">
+            <img src='./estilos/imagens/zap.png' class="whatsapp-link">
+        </a>
+    </div>
+
 
     <div id="formulario">
         <div class="container-formulario" animated bouceInLeft>
