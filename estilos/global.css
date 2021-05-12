@@ -10,6 +10,40 @@ body {
     overflow-x: hidden;
 }
 
+.alert-wpp {
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    width: 80px;
+    text-align: center;
+    font-size: 14px;
+    animation: entry_icon 10s;
+    animation-timing-function: linear;
+    z-index: 9999;
+}
+.animate-wpp {
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    width: 80px;
+    text-align: center;
+    font-size: 14px;
+    animation: entry_icon 10s;
+    animation-timing-function: linear;
+    z-index: 9999;
+}
+
+.notify-wpp {
+    position: absolute;
+    left: 5px;
+    bottom: 60px;
+    padding: 0.7px 5px;
+    font-size: 11px;
+    color: #fff;
+    background: #f54424;
+    border-radius: 10px;
+    line-height: 15px;
+}
 .whatsapp-link {
     bottom: 2%;
     right: 2%;

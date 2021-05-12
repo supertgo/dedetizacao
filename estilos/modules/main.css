@@ -4,6 +4,8 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 header {
@@ -23,21 +25,12 @@ header {
       align-self: stretch;
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  padding: 1rem;
-  background-color: black;
+  background-color: white;
   z-index: 1000;
 }
 
-header .logo {
-  font-weight: 700;
-  color: white;
-  text-decoration: none;
-  font-size: 2em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  -webkit-transition: 0.6;
-  transition: 0.6;
-  font-family: 'Poppins', sans-serif;
+header .logo img {
+  width: 10rem;
 }
 
 header nav {
@@ -53,7 +46,7 @@ header nav {
 
 header nav input, header nav label {
   display: none;
-  color: white;
+  color: red;
   font-size: 2rem;
 }
 
@@ -65,27 +58,40 @@ header nav ul {
       justify-content: space-around;
 }
 
-header nav ul li {
-  list-style: none;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+header nav ul .fale-conosco {
+  white-space: nowrap;
 }
 
-header nav ul li.ativo {
-  border-bottom: 2px solid red;
-}
-
-header nav ul li:hover {
-  border-bottom: 2px solid red;
-}
-
-header nav ul li a {
+header nav ul a {
+  width: 100%;
   margin: 0 1rem;
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul a li {
+  display: inline-block;
+}
+
+header nav ul a li.ativo {
+  border-bottom: 2px solid red;
+}
+
+header nav ul a li:hover {
+  border-bottom: 2px solid red;
 }
 
 @media (max-width: 768px) {
@@ -104,7 +110,7 @@ header nav ul li a {
   }
   .checkbtn {
     display: block;
-    padding-right: 1rem;
+    padding-right: 1.5rem;
   }
   .checkbtn > * {
     font-size: 2rem;
@@ -126,8 +132,11 @@ header nav ul li a {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  header .logo {
+    padding-left: 1rem;
+  }
   header nav ul {
-    background-color: white;
+    background-color: #dfdfdf;
     position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -137,22 +146,18 @@ header nav ul li a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    top: 4rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 6em;
     left: -100%;
     text-align: center;
     -webkit-transition: all .5s;
     transition: all .5s;
   }
-  header nav ul li {
-    display: block;
-    line-height: 1.875rem;
-  }
-  header nav ul li.ativo {
-    background: #ffffff;
-    color: #000000;
-  }
-  header nav ul li a {
+  header nav ul a {
     color: black;
+    line-height: 2.5;
   }
 }
 
@@ -425,7 +430,7 @@ footer {
   padding-bottom: 2rem;
   left: 0px;
   font-family: "Poppins", sans-serif;
-  background: #111;
+  background: white;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -471,7 +476,7 @@ footer {
 }
 
 .footer-info span {
-  color: white;
+  color: black;
 }
 
 .footer-info-centro {
@@ -488,7 +493,7 @@ footer {
 }
 
 #horario-abertura {
-  background-color: white;
+  background-color: #d36060;
   width: 60% !important;
   padding: 15px;
   border-radius: 15px;
