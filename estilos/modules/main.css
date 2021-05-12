@@ -178,8 +178,19 @@ header nav ul a li:hover {
   font-family: "Poppins", sans-serif;
 }
 
+#inicio .inicio-info {
+  padding-top: 2rem;
+}
+
+#inicio .inicio-info span {
+  color: black;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-shadow: white;
+}
+
 #inicio .texto-principal {
-  color: #fff;
+  color: black;
   text-align: center;
   margin: 2%;
 }
@@ -191,13 +202,13 @@ header nav ul a li:hover {
 #inicio .texto-principal p {
   margin: 10px 0 40px;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 
 #inicio .texto-principal .inicio-btn {
   display: inline-block;
   text-decoration: none;
-  color: #fff;
+  color: black;
   border-bottom: 1px solid #fff;
   padding: 12px 34px;
   position: relative;
