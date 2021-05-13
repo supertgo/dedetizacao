@@ -136,7 +136,7 @@ header nav ul a li:hover {
     padding-left: 1rem;
   }
   header nav ul {
-    background-color: #dfdfdf;
+    background-color: #f7f7f7;
     position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -176,6 +176,7 @@ header nav ul a li:hover {
   background: url(../imagens/home.png) no-repeat center fixed;
   background-size: cover;
   font-family: "Poppins", sans-serif;
+  text-shadow: #fff8f8 0px 1.5px;
 }
 
 #inicio .inicio-info {
@@ -186,7 +187,6 @@ header nav ul a li:hover {
   color: black;
   font-size: 1.5rem;
   padding: 1rem;
-  text-shadow: white;
 }
 
 #inicio .texto-principal {
@@ -208,14 +208,21 @@ header nav ul a li:hover {
 #inicio .texto-principal .inicio-btn {
   display: inline-block;
   text-decoration: none;
-  color: black;
+  color: white;
   border-bottom: 1px solid #fff;
   padding: 12px 34px;
   position: relative;
+  text-shadow: none;
 }
 
 #inicio .texto-principal .inicio-btn {
   background-color: #f44336 !important;
+}
+
+@media (max-width: 768px) {
+  .inicio-info span {
+    display: block;
+  }
 }
 
 #servicos {
