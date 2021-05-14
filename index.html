@@ -78,7 +78,7 @@
             <div class="servico-unico">
                 <div class="servico-icone"><img src="./estilos/imagens/escorpiao-teste.png" alt="Foto de um escorpião">
                 </div>
-                <h3>Escorpião</h3>
+                <h3>Escorpioẽs</h3>
                 <p>Estes animais estão presentes em abientes úmidos e com baixas incidência de luz. O contato com o seu
                     veneno pode ser letal e o tratamento deve ser devidamente calculado por um profissional.</p>
 
@@ -128,18 +128,17 @@
             <div class="contato">
                 <h3>Preencha o formulário e nos envie uma mensagem!</h3>
                 <form action="./servidor/mail.php" method="POST" id="formulario-contato">
-                    <!-- Formulário de contato -->
 
                     <label>Nome completo
-                        <input type="text" name="nome" required />
+                        <input type="text" name="nome" data-js="nome" required />
                     </label>
 
                     <label>E-mail
-                        <input type="email" name="email" required />
+                        <input type="email" name="email" data-js="email" required />
                     </label>
 
-                    <label>Telefone
-                        <input type="text" name="tel" required />
+                    <label>Celular
+                        <input type="tel" name="tel" data-js="celular" minlength="15" maxlength="15" />
                     </label>
 
                     <label>Assunto
@@ -147,6 +146,13 @@
                             <option key="place-holder">
                                 Selecione o assunto
                             </option>
+                            <option>Desratização</option>
+                            <option>Descupinização</option>
+                            <option>Escorpioẽs</option>
+                            <option>Baratas</option>
+                            <option>Formigas</option>
+                            <option>Limpeza de Caixa d´agua</option>
+                            <option>Outro</option>
                         </select>
                     </label>
 
@@ -192,8 +198,8 @@
         </div>
     </footer>
 
-    <script src="./js/global.js"></script>
     <script src="js/modules/alterna-classe-ativo.js"></script>
+    <script src="js/modules/mascaras-validadoras.js"></script>
 </body>
 
 </html>
