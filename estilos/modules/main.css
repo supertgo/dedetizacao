@@ -331,6 +331,7 @@ header nav ul a li:hover {
   margin-right: auto;
   padding: 1em;
   padding-top: 7rem;
+  padding-bottom: 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,6 +365,7 @@ header nav ul a li:hover {
 
 .contato {
   background: var(--bodyColor);
+  padding-bottom: 2rem;
 }
 
 .contato .invalido {
