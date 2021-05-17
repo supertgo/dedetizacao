@@ -8,7 +8,7 @@ if(empty($_POST['senha'])){
 }
 
 $senha = mysqli_real_escape_string($conexao, trim($_POST['senha']));
-$query = "SELECT * FROM dedetizatable WHERE senha = '{$senha}'";
+$query = "SELECT * FROM dedetizatable WHERE senha = md5('{$senha}')";
 
 $resposta = mysqli_query($conexao, $query);
 $linhas = mysqli_num_rows($resposta);
