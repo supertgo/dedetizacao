@@ -1,9 +1,1 @@
-const ul = document.querySelector('ul');
-const li = document.querySelectorAll('li');
-
-li.forEach(elemento => {
-    elemento.addEventListener('click', () => {
-        ul.querySelector('.ativo').classList.remove('ativo');
-        elemento.classList.add('ativo');
-    })
-})
+const ul = document.querySelector("ul"), li = document.querySelectorAll("li"); li.forEach(e => { e.addEventListener("click", () => { ul.querySelector(".ativo").classList.remove("ativo"), e.classList.add("ativo") }) });

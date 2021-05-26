@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="estilos/imagens/carinha.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
-    <title>Document</title>
+    <title>Tecno Dedetizadora</title>
 </head>
 
 <body>
     <header>
-        <a href="#" class="logo">Logo</a>
+        <a href="#" class="logo"><img src="./estilos/imagens/logo_DedetizadoraLTDA.png" alt=""></a>
         <nav>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
@@ -25,31 +26,38 @@
             </label>
 
             <ul>
-                <li class="ativo"><a href="#inicio">
-                        <!--<i class="fa fa-home"></i>-->Inicio
-                    </a></li>
-                <li><a href="#servicos">
-                        <!--<i class="fas fa-layer-group"></i>-->Serviços
-                    </a></li>
-                <li><a href="#" class="fale-conosco">
-                        <!--<i class="far fa-id-card"></i>-->Fale conosco
-                    </a></li>
-                <li><a href="./servidor/admin.php"><i class="fas fa-user-shield"></i> Administrador</a></li>
+                <a href="#inicio">
+                    <li class="ativo">Inicio</li>
+                </a>
+                <a href="#servicos">
+                    <li>Serviços</li>
+                </a>
+                <a href="#formulario" class="fale-conosco">
+                    <li>Fale conosco</li>
+                </a>
+                <a href="./servidor/admin.php"><i class="fas fa-user-shield"></i>
+                    <li>Administrador</li>
+                </a>
             </ul>
         </nav>
     </header>
+
     <div id="inicio">
         <div class="texto-principal">
             <h1>Tecno Dedetizadora LTDA</h1>
             <p>A mais de 10 anos no mercado com profissionais treinados e capacitados tecnicamente.</p>
-            <a href="#servicos" class="inicio-btn">Contrate nossos serviços</a>
+            <a href="https://api.whatsapp.com/send?phone=5531991045584" target="_blank" class="inicio-btn">Faça seu
+                orçamento já</a>
+            <div class="inicio-info">
+                <span><i class="fa fa-phone" aria-hidden="true"></i> (31) 99104-5584</span>
+                <span><i class="fa fa-envelope-o" aria-hidden="true"></i> sandresandro@ymail.com</span>
+            </div>
         </div>
-
-
     </div>
 
     <div id="servicos">
-        <h1>Nossos Serviços</h1>
+        <h1>Conheça Nosos Serviços</h1>
+
         <div class="servicos-conteudo">
 
             <div class="servico-unico">
@@ -68,8 +76,9 @@
 
             </div>
             <div class="servico-unico">
-                <div class="servico-icone"><img src="./estilos/imagens/escorpiao-teste.png" alt="Foto de um escorpião"></div>
-                <h3>Escorpião</h3>
+                <div class="servico-icone"><img src="./estilos/imagens/escorpiao-teste.png" alt="Foto de um escorpião">
+                </div>
+                <h3>Escorpioẽs</h3>
                 <p>Estes animais estão presentes em abientes úmidos e com baixas incidência de luz. O contato com o seu
                     veneno pode ser letal e o tratamento deve ser devidamente calculado por um profissional.</p>
 
@@ -98,17 +107,20 @@
             </div>
         </div>
     </div>
-    <a href="https://api.whatsapp.com/send?phone=5531991045584">
-        <img src='./estilos/imagens/zap.png' class="whatsapp-link">
-    </a>
 
-    <div class="formulario">
+    <div class="alert-wpp">
+        <a href="https://api.whatsapp.com/send?phone=5531991045584">
+            <img src='./estilos/imagens/zap.png' class="whatsapp-link">
+        </a>
+    </div>
+
+    <div id="formulario">
         <div class="container-formulario" animated bouceInLeft>
             <div class="informacoes-empresa">
                 <h3>Tecno Dedetizadora</h1>
                     <ul>
                         <li><i class="fa fa-road"></i> Endereço</li>
-                        <li><i class="fa fa-envelope"></i> sandresandro@gmail.com</li>
+                        <li><i class="fa fa-envelope"></i> sandresandro@ymail.com</li>
                         <li><i class="fa fa-phone"></i> (31) 3442-4920 /(31) 99104-5584</li>
 
                     </ul>
@@ -116,18 +128,17 @@
             <div class="contato">
                 <h3>Preencha o formulário e nos envie uma mensagem!</h3>
                 <form action="./servidor/mail.php" method="POST" id="formulario-contato">
-                    <!-- Formulário de contato -->
 
                     <label>Nome completo
-                        <input type="text" name="nome" required />
+                        <input type="text" name="nome" data-js="nome" required />
                     </label>
 
                     <label>E-mail
-                        <input type="email" name="email" required />
+                        <input type="email" name="email" data-js="email" required />
                     </label>
 
-                    <label>Telefone
-                        <input type="text" name="tel" required />
+                    <label>Celular
+                        <input type="tel" name="tel" data-js="celular" minlength="15" maxlength="15" />
                     </label>
 
                     <label>Assunto
@@ -135,6 +146,13 @@
                             <option key="place-holder">
                                 Selecione o assunto
                             </option>
+                            <option>Desratização</option>
+                            <option>Descupinização</option>
+                            <option>Escorpioẽs</option>
+                            <option>Baratas</option>
+                            <option>Formigas</option>
+                            <option>Limpeza de Caixa d´agua</option>
+                            <option>Outro</option>
                         </select>
                     </label>
 
@@ -151,7 +169,8 @@
     <footer class="footer">
         <div class="footer-info">
             <h3>Localização</h3>
-            <span>Tecno Dedetizadora LTDA - Rua Raimundo Mafra, 67 , casa 1, Gravará - Florianópolis SC</span>
+            <span> Belo Horizonte-MG: <br>
+                Rua Cândido Lúcio, 339-A - Aparecida</span>
             <a href="#">VEJA MAIS</a>
         </div>
 
@@ -159,8 +178,8 @@
             <div id="horario-abertura">
                 <h3>Horário de funcionamento</h3>
                 <div>
-                    <span>Segunda - Sexta</span>
-                    <span>6:30 - 18:00</span>
+                    <span>Segunda - Sexta:</span>
+                    <span>24 horas</span>
                     <br />
                     <span>Sábado - </span>
                     <span>Horário e preço a combinar</span>
@@ -170,7 +189,8 @@
 
         <div class="footer-info">
             <h3>Fale conosco</h3>
-            <span>E-mail -<a id="footer-info-email" href="">sandresandro@gmail.com</a> <br> Tel - (31) 3442-4920</span>
+            <span>E-mail -<a id="footer-info-email" href="">sandresandro@ymail.com</a> <br> Celular - (31)
+                99104-5584</span>
             <a target="_blank" href="https://api.whatsapp.com/send?phone=5531991045584">ENVIE UMA MENSAGEM</a>
             <div>
                 <a target="_blank" href="https://api.whatsapp.com/send?phone=5531991045584"><i
@@ -178,11 +198,9 @@
             </div>
         </div>
     </footer>
-    <script src="./js/global.js"></script>
-    <script src="./js/modules/galeria.js"></script>
-    <script src="./js/modules/servicosModal.js"></script>
-    <!-- <script src="./js/modules/formularioContato.js"></script>-->
+
     <script src="js/modules/alterna-classe-ativo.js"></script>
+    <script src="js/modules/mascaras-validadoras.js"></script>
 </body>
 
 </html>

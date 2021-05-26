@@ -16,7 +16,7 @@
 
     .checkbtn{
         display: block;
-        padding-right: 1rem;
+        padding-right: 1.5rem;
 
         & > * {
             font-size: 2rem;
@@ -25,11 +25,9 @@
         #cancel {
             display: none;
         }
-        
     }
     
     #check {
-        
         &:checked ~ ul {
             left: 0;
         }
@@ -45,34 +43,27 @@
      
     header {
         justify-content: space-between;
+
+        .logo {
+            padding-left: 1rem;
+        }
         
         nav {
-            
-            
             ul {
-                background-color: white;
+                background-color: #f7f7f7;
                 position: fixed;
                 display: flex;
                 width: 100%;
                 flex-direction: column;
-                
-                top: 4rem;
+                align-items: center;
+                top: 6em;
                 left: -100%;
                 text-align: center;
                 transition: all .5s;
 
-                li {
-                    display: block;
-                    line-height: 1.875rem;
-
-                    &.ativo {
-                        background: #ffffff;
-                        color: #000000;
-                    }
-                        a{
-                            
-                            color: black;
-                    }
+                a{
+                    color: black;
+                    line-height: 2.5;
                 }
             }
         }

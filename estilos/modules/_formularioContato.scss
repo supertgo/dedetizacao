@@ -10,20 +10,25 @@
 .container-formulario {
     font-family: "Open sans", sans-serif;
     box-shadow: 0 0 1.25rem 0 var(--red);
-
+    display: grid;
+    grid-template-columns: 2fr;
+    
     & > * {
         padding: 1em;
     }
 }
 
-.formulario {
-    max-width: 700px;
+#formulario {
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
     padding-top: 7rem;
+    padding-bottom: 7rem;
     display: flex;
+    justify-content: center;
     color: var(--white);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1)));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
 }
 
 .informacoes-empresa {
@@ -46,15 +51,16 @@
     }
 }
 
-
-
 .contato {
     background: var(--bodyColor);
-    
+    padding-bottom: 2rem;
+
+    .invalido {
+        border: 2px solid red;
+    }
 
     form {
         display: grid;
-        grid-template-columns: 1fr ;
         grid-gap: 1.25rem;
 
         label {
@@ -68,7 +74,7 @@
             select {
                 font-size: 100%;
                 padding: 5px 10px;
-                height: 2rem;
+                height: 3rem;
                 width: 100%;
                 appearance: none;
                 background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/down.svg);
@@ -76,6 +82,7 @@
                 background-position: center right 12px;
                 background-size: 15px 15px;
             }
+
         }
 
         #btn-enviar{
@@ -110,16 +117,12 @@
     flex-direction: column;
 }
 
-@media (min-width: 768px){
+@media(min-width: 768px){
     
     .container-formulario {
-        display: grid;
-        grid-template-columns: 1fr 1fr; 
-
+        
         & > * {
             padding: 2em;
         }
     }
-
-
 }
